@@ -1,20 +1,112 @@
 <html>
-  <head>
-    <title>Google SignIn</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="jumbotron text-center text-primary">
-        <h1>Sign in to Slack</h1>
-        <p>We suggest using the email address you use at work.</p>
-        <div>
-          <a href="/auth/google" class="btn btn-blue btn--large full-width no_underline">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="icon"><g><path class="c-third_party_auth__icon__google--red" fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path><path class="c-third_party_auth__icon__google--blue" fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path><path class="c-third_party_auth__icon__google--yellow" fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path><path class="c-third_party_auth__icon__google--green" fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path><path fill="none" d="M0 0h48v48H0z"></path></g></svg>
-            Sign in with Google
-          </a>
-        </div>
+
+<head>
+  <title>Google SignIn</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="p-refreshed-page--header">
+    <div class="left-col"></div>
+    <div class="text-center"><a target="_self" class="c-link" href="https://slack.com" rel="noopener noreferrer"><img
+          alt="Slack" src="https://a.slack-edge.com/bv1-9/slack_logo-ebd02d1.svg" height="34" title="Slack"></a></div>
+    <div class="right-col">
+      <div class="p-refreshed-page--header-sidelink">New to Slack?<br><a target="_self" class="c-link bold"
+          href="/get-started#/createnew" rel="noopener noreferrer">Create an account</a>
       </div>
     </div>
+  </header>
+  <div class="container">
+    <div class="jumbotron text-center text-primary">
+      <h1 class="page-header">Sign in to Slack</h1>
+      <p class="page-sub-heading">We suggest using the <b>email address you use at work.</b></p>
+      <div class="started-signin">
+        <a href="/auth/google" class="btn btn-outline-blue btn--large full-width mb-20">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="icon">
+            <g>
+              <path class="c-third_party_auth--icon--google--red" fill="#EA4335"
+                d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z">
+              </path>
+              <path class="c-third_party_auth--icon--google--blue" fill="#4285F4"
+                d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z">
+              </path>
+              <path class="c-third_party_auth--icon--google--yellow" fill="#FBBC05"
+                d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z">
+              </path>
+              <path class="c-third_party_auth--icon--google--green" fill="#34A853"
+                d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z">
+              </path>
+              <path fill="none" d="M0 0h48v48H0z"></path>
+            </g>
+          </svg>
+          Sign in with Google
+        </a>
+        <a href="https://www.apple.com/es/" class="btn btn-outline-black btn--large full-width">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path
+              d="M10.16 -2.38419e-07C7.8 0.56 6.9 2.1 6.86 4.14C7.76 4.06 8.27 3.96 8.99 3.23C9.84 2.37 10.22 1.26 10.22 0.43C10.22 0.219999 10.2 0.129999 10.16 -2.38419e-07ZM10.33 3.84C9.86 3.84 9.28 3.95 8.59 4.19C7.94 4.42 7.46 4.54 7.16 4.54C6.92 4.54 6.46 4.43 5.77 4.23C5.07 4.03 4.47 3.92 3.99 3.92C1.69 3.92 1.19209e-07 6.11 1.19209e-07 9.22C1.19209e-07 10.86 0.49 12.58 1.48 14.35C2.47 16.12 3.49 17 4.5 17C4.84 17 5.29 16.89 5.83 16.65C6.36 16.41 6.84 16.32 7.26 16.32C7.69 16.32 8.2 16.43 8.77 16.64C9.39 16.87 9.85 17 10.18 17C11.9 17 13.48 14.12 14 12.41C12.8 12.05 11.72 10.53 11.72 8.85C11.72 7.3 12.46 6.44 13.52 5.53C12.82 4.66 11.93 3.84 10.33 3.84Z"
+              fill="#1D1C1D"></path>
+          </svg>
+          Sign in with Apple
+        </a>
+        <div class="c-horizontal-content-rule margin-top-150 margin-bottom-150">
+          <hr class="c-horizontal-content-rule--leftrule">
+          <div class="c-horizontal-content-rule--content">OR</div>
+          <hr class="c-horizontal-content-rule--rightrule">
+        </div>
+        <form novalidate="">
+          <div class="p-get-started-email-form"><label class="offscreen" for="signup_email" id="signup_email_label"
+              aria-hidden="true">Enter your email address</label>
+            <div>
+              <input data-email-healing="true" spellcheck="false" min="0" max="0" width="0" aria-describedby="signup_email_hint"
+                aria-invalid="false" aria-labelledby="signup_email_label" aria-required="false" aria-label="" autocomplete="on"
+                class="c-input-text c-input-text--large p-get-started-email-form--input" id="signup_email" name="email"
+                placeholder="name@work-email.com" type="email" value="">
+              </div>
+              <button class="btn btn--outline btn--large full-width p-get-started-aubergine-button" id="submit_btn"
+                data-style="expand-right" type="submit">Sign In with
+                Email
+              </button>
+              </div>
+              </form>
+              <div class="p-get-started-signin--manual"><i class="c-icon p-get-started-signin-icon c-icon--sparkles" type="sparkles"
+                  aria-hidden="true"></i><span class="padding-left-75">We’ll email you a magic code for
+                  a
+                  password-free sign in. Or you can <a target="_self" class="c-link bold" href="https://slack.com"
+                    rel="noopener noreferrer">sign in manually instead</a>.</span>
+              </div>
+              <p class="p-signed-in-workspaces--text">You’re already signed in to…</p>
+              <div class="p-signed-in-workspaces--team-links p-signed-in-workspaces--workspaces">
+                <div class="display-flex align-items-center margin-125">
+                  <div class="margin-right-50"><i class="c-team-icon c-team-icon--unit" role="img" aria-hidden="false"
+                      aria-label="Factorial"></i>
+                  </div>
+                  <div class="flex-one display-flex flex-direction-column"><span
+                      class="p-launch-team-row--teamname">Factorial</span><span
+                      class="p-launch-team-row--team-info">factorialteam.slack.com</span>
+                  </div>
+                  <a target="_blank" class="btn btn--outline btn--medium" aria-label="Go to Factorial on Slack"
+                    rel="noopener noreferrer" href="https://factorialteam.slack.com/ssb/redirect?entry_point=get_started">Open<span
+                      aria-label="(opens in new tab)"></span>
+                  </a>
+                </div>
+              </div>
+              </div>
+      </div>
+      </div>
+      <div class="p-refreshed-page--footer-container">
+        <footer class="p-refreshed-page--footer"><a target="-blank"
+            class="c-link c-button-unstyled p-refreshed-page--footer-link p-refreshed-page--footer-link--main" href="/legal"
+            rel="noopener noreferrer">Privacy &amp; Terms</a><a target="-blank"
+            class="c-link c-button-unstyled p-refreshed-page--footer-link p-refreshed-page--footer-link--main"
+            href="/help/contact" rel="noopener noreferrer">Contact Us</a>
+          <div class="" aria-haspopup="true"><a target="-blank"
+              class="c-link c-button-unstyled p-refreshed-page--footer-link p-refreshed-page--footer-link--main" href="#"
+              rel="noopener noreferrer"><i class="c-icon margin-right-25 c-icon--globe c-icon--inherit" type="globe"
+                aria-hidden="true"></i>Change region<i class="c-icon c-icon--chevron-medium-down c-icon--inherit"
+                type="chevron-medium-down" aria-hidden="true"></i></a>
+          </div>
+        </footer>
+      </div>
   </body>
-</html> 
+</html>
