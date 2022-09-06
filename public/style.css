@@ -118,6 +118,10 @@ body {
   width: 18px;
 }
 
+.icon--large {
+  height: 34px;
+}
+
 .btn-outline-blue {
   background-color: #fff;
   border: 2px solid #4285f4;
