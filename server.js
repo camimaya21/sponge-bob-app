@@ -5,12 +5,13 @@ const passport = require('passport')
 const GoogleStrategy = require('passport-google-oauth2').Strategy
 const { google } = require('googleapis')
 require('dotenv').config();
+const https = require('https');
+const fs = require('fs');
 
-const port = process.env.PORT
+const PORT = process.env.PORT
 const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID
 const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET
 const CALLBACK_URL = process.env.CALLBACK_URL
-
 
 /*  EXPRESS */
 
@@ -27,8 +28,15 @@ app.get('/', function (req, res) {
   res.render('pages/auth')
 })
 
-app.listen(port, () => console.log('App listening on port ' + port))
+// app.listen(PORT, () => console.log('App listening on port ' + PORT))
 
+const options = {
+  key: fs.readFileSync(`${process.env.PRIVATEKEY}`),
+  cert: fs.readFileSync(`${process.env.CERT}`),
+  ca: fs.readFileSync(`${process.env.CA}`)
+};
+
+https.createServer(options, app).listen((PORT, () => console.log('App listening on port ' + PORT)))
 
 /*  PASSPORT SETUP  */
 
