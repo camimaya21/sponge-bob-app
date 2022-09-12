@@ -36,7 +36,7 @@ const options = {
   ca: fs.readFileSync(`${process.env.CA}`)
 };
 
-https.createServer(options, app).listen((PORT, () => console.log('App listening on port ' + PORT)))
+https.createServer(options, app).listen(PORT, () => console.log('App listening on port ' + PORT))
 
 /*  PASSPORT SETUP  */
 
